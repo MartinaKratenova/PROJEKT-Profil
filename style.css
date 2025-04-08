@@ -87,10 +87,10 @@ body {
   width: 100%;
 }
 
-.facebook,
+/* .facebook,
 .twitter {
-  width: 50%;
-}
+  width: 100%;
+} */
 
 a {
   display: block;
@@ -118,7 +118,28 @@ a {
 .flexboxik {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: grid;
+  grid-template-areas:
+  "portfolio portfolio"
+  "facebook twitter";
+grid-template-columns: 1fr 1fr;
+}
+.flexboxik > .portfolio {
+  grid-area: portfolio;
+  grid-column: 1 / span 2;
+}
+
+.flexboxik > .facebook {
+  grid-area: facebook;
+
+ 
+
+}
+
+.flexboxik > .twitter {
+  grid-area: twitter;
+
+
 }
 
 /*Zakulacene rohy*/

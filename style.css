@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 	BARVY
@@ -13,7 +19,121 @@ html { box-sizing: border-box; }
 	twitter    #1da1f2
 */
 
-
 body {
-	background-color: #bdc3c7;
+  background-color: #bdc3c7;
+  
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.jmeno {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.karta {
+  margin: 20px;
+  width: 400px;
+  padding: 0;
+
+  box-shadow: 5px 5px 8px #3f464d;
+  background-color: #31363b;
+  
+  justify-self: center;
+  text-align: left;
+}
+
+.zahlavi {
+  position: relative;
+}
+
+.obsah-karty {
+  padding: 20px;
+}
+
+.foto {
+  width: 100%;
+}
+
+.czechitas {
+  border-radius: 50%;
+  background-color: #b92e81;
+
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
+
+.tlacitka {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tlacitko {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+
+  border: 1px solid #3f464d;
+}
+
+.portfolio {
+  width: 100%;
+}
+
+.facebook,
+.twitter {
+  width: 50%;
+}
+
+a {
+  display: block;
+  margin: 0;
+  padding: 10px;
+
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.portfolio:hover {
+  background-color: #e74c3c;
+}
+
+/*řeší mezeru mezi dvěma tlačítky na spodku*/
+.flexboxik {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/*Zakulacene rohy*/
+.karta {
+  border-radius: 5px;
+}
+
+.twitter {
+  border-radius: 0 0 5px 0;
+}
+
+.facebook {
+  border-radius: 0 0 0 5px;
+}
+
+.foto {
+  border-radius: 5px 5px 0 0;
 }
